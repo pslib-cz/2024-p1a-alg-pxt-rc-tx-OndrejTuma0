@@ -7,7 +7,7 @@ basic.forever(function () {
     x = input.acceleration(Dimension.X)
     y = input.acceleration(Dimension.Y)
 
-    radio.sendString(`${x}, ${y}, ${control.deviceSerialNumber()}`)
+    radio.sendString(`${x}, ${y})
 
     basic.pause(20)
 })
